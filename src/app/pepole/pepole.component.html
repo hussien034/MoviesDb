@@ -1,0 +1,9 @@
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let x of pepole" class="col-md-2">
+      <img src="https://image.tmdb.org/t/p/original/{{x.poster_path}}" class="w-100">
+      <p>{{x.title}}</p>
+    </div>
+  </div>
+</div>

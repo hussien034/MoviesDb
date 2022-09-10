@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-8">
+      <div class="my-3">
+        <h1>Login</h1>
+        <form [formGroup]='loginForm' (ngSubmit)='getData()'>
+        <div class="my-2">
+          <label>Email</label>
+          <input type="email" class="form-control" formControlName='email'>
+          <div class="text-danger" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" >
+            <p *ngIf="loginForm.get('email')?.errors?.['required']">email is required</p>
+          </div>
+        </div>
+        <div class="my-2">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName='password'>
+          <div class="text-danger" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+            <p *ngIf="loginForm.get('password')?.errors?.['required']">passowrd is required</p>
+          </div>
+        </div>
+        <button [disabled]='loginForm.invalid' class="btn btn-primary" type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+  </div>
+</div>

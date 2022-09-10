@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="moviest">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="network">Network</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="tvshow">Tv Show</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="pepole">pepole</a>
+        </li>
+      </ul>
+      <ul class="d-flex list-unstyled mt-2">
+        <div class="icons">
+          <a href="https://www.facebook.com/bassem.hussien.100"><i class="fa-brands fa-facebook mx-2"></i></a>
+          <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp mx-2"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
+        </div>
+        <div class="main-cont d-flex flex-wrap">
+          <li *ngIf='!isLgoin' class="nav-item mx-2">
+          <a class="nav-link" routerLink="signin">Login</a>
+        </li>
+        <li *ngIf='!isLgoin' class="nav-item mx-2">
+          <a class="nav-link" routerLink="signup">Register</a>
+        </li>
+        <li *ngIf='isLgoin' class="nav-item mx-2">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+</nav>

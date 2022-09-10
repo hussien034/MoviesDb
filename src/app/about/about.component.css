@@ -1,0 +1,14 @@
+.container{
+  height: 90vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('./949023.jpg');
+
+ background-size: 100% 100%;
+}

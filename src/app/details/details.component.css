@@ -1,0 +1,10 @@
+body{
+  color: white !important;
+  height:100vh !important;
+}
+.container{
+  height:90vh !important;
+}
+img{
+  height:450px;
+}

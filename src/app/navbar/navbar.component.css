@@ -1,0 +1,20 @@
+.nav-link{
+  color: white !important;
+}
+nav{
+  background-color: rgba(30, 41, 82, 0.1) !important;
+}
+.navbar-brand{
+  color: white !important;
+}
+i{
+  color: white !important;
+  font-size:20px;
+  margin-top:5px;
+}
+.social .fab{
+ margin: 0px 10px;
+}
+button{
+  background-color: white !important;
+}
